@@ -67,9 +67,6 @@
                                     <input class="form-control" type="text" id="event_report" name="name"
                                         placeholder="Car accident two people injured">
 
-                                    <label for="place_report">Where's it?</label>
-                                    <input class="form-control" type="text" id="place_report" name="name"
-                                        placeholder="Blok 6 in Prince Avenue">
                                 </div>
 
                                 <button type="submit" class="btn mt-3 mx-2 center"
@@ -83,6 +80,58 @@
                 </div>
 
             </div>
+
+
+
+            <div class="d-md-flex justify-content-between report-list">
+                <div class="mb py-5">
+                    <div class="card m-2 p-3 h-100 shadow">
+                        <h2>Report List</h2>
+                        <ul class="list-group">
+                            {{#each ireports}}
+                            {{#unless solved}}
+                            <li class="col-xs-3 list-group-item">
+                                <div class="row">
+
+                                    <img src="/assets/img/ireport.png" width="35px" height="30px">
+                                    <p class="ml-3">{{event_name}}</p>
+
+
+                                    <div class="col float-right">
+                                        <button class="btn change-solved ml-3"
+                                            style="background-color:#f48c06; color:whitesmoke;" data-id="{{id}}"
+                                            data-newsolved="1">
+                                            Solve
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </li>
+                            {{/unless}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class=" mb py-5">
+                    <div class="card m-2 p-3 h-100 shadow">
+                        <h2>Solved Case</h2>
+                        <ul class="list-group">
+                            {{#each ireports}}
+                            {{#if solved}}
+                            <li class="col-xs-3 list-group-item">
+                                <div class="row">
+                                    <img src="/assets/img/ireport.png" width="35px" height="30px">
+                                    <p class="ml-3">{{event_name}}</p>
+
+                                </div>
+                            </li>
+                            {{/if}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
 
 
     </section>

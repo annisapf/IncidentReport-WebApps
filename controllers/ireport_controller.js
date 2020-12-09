@@ -14,11 +14,11 @@ router.get("/", function (req, res) {
 });
 
 router.post("/api/ireport", function (req, res) {
-    console.log("post" + req.body.ireport_name)
+    console.log("post" + req.body.event_name)
     ireport.create([
-        "ireport_name",
+        "event_name",
     ], [
-        req.body.ireport_name,
+        req.body.event_name,
     ], function (result) {
         res.json({ id: result.insertId });
     });

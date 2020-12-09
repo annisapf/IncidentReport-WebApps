@@ -30,8 +30,6 @@ $(function () {
         console.log("event_report")
         var newReport = {
             event_name: $("#event_report").val().trim(),
-            place_name: $("#place_report").val().trim()
-
         };
         console.log(newReport);
 
