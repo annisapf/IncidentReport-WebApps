@@ -5,6 +5,8 @@
 ## Table of Contents 
 
 * [Screen Shots](#screenshots)
+
+* [Demo](#demo)
     
 * [Installation](#installation)
 
@@ -21,6 +23,8 @@
 ## Screenshots
 ![iReport World Image](https://user-images.githubusercontent.com/7066137/101640529-ba435100-3a84-11eb-9526-7d9a7ddd471b.png)
 
+## Demo
+![ireport world](https://user-images.githubusercontent.com/7066137/101641785-499d3400-3a86-11eb-9426-4f1d0d987a74.gif)
 
 ## Installation
     
