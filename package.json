@@ -1,0 +1,25 @@
+{
+  "name": "ireport",
+  "version": "1.0.0",
+  "description": "Incident report live",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annisapf/IncidentReport-WebApps.git"
+  },
+  "author": "Annisa Purbandari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annisapf/IncidentReport-WebApps/issues"
+  },
+  "homepage": "https://github.com/annisapf/IncidentReport-WebApps#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
